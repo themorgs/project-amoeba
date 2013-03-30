@@ -2,31 +2,20 @@
     <head>
         <link rel="stylesheet" type="text/css" href='styles/master.css'></style>
     </head>
-    <body>
-        <div id="main-page">
+    <body id="main-page">
+        <div>
         <p id="heading">Project Amoeba</p>
+        
+        
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="src/get-quote.js"></script>
+        
+        <input type="text" id="txtQuote"></input>
+        <button id="btnGetQuote" class="button" OnClick="GetQuote(txtQuote)">Get Quote</button>
         
         <p id="quote"></p>
         
-        <!--(TODO:) This needs to go in the get-quotes.js file-->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        
-        <script>
-            $.ajax({
-                type: 'GET',
-                url: 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22GOOG%22)%0A%09%09&diagnostics=true&env=http%3A%2F%2Fdatatables.org%2Falltables.env',
-                crossDomain: true,
-                dataType: 'xml',
-                success: parseXml
-                });
-                
-            function parseXml(xml){
-                var result = $(xml).find('Ask').text();
-                var quote = document.getElementById("quote");
-                
-                quote.textContent = "Google(GOOG): " + result;
-                }                 
-        </script>
         </div>
+            
     </body>
 </html>
