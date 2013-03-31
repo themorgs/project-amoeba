@@ -8,6 +8,15 @@
                 padding: 10px;
                 text-align: center;
                 }
+                .p-small{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: small;
+                font-weight: normal;
+                background-color: #E1E3AA;
+                border-radius: 4px;
+                padding: 10px;
+                text-align: center;
+                }
 .button {
     -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
