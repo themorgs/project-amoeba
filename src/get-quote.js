@@ -7,7 +7,8 @@ function GetQuote(symbol) {
         dataType: 'xml',
         success: parseXml
         });
-                
+    
+    // Parse XML
     function parseXml(xml){
         var price = $(xml).find('LastTradePriceOnly').text();
         var tradeDate = formatDate($(xml).find('LastTradeDate').text());
