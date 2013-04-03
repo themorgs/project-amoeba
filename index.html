@@ -1,25 +1,33 @@
+<!DOCTYPE html>
 <html>
     <head>
         <!-- Google Web Fonts http://www.google.com/fonts/ -->
         <link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
         <link href='style/master.css' rel='stylesheet' type='text/css'>
+        <link href='style/inputs.css' rel='stylesheet' type='text/css'>
         
         <!-- jQuery reference -->
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript" src="src/amoeba.all.js"></script>
     </head>
     <body id="main-page">
-        <div>
-        <p id="header">project amoeba</p>
-        
-        
-        <input type="text" id="txtQuote" />
-        <button id="btnGetQuote" class="button" OnClick="GetQuote(txtQuote);">get quote</button>
-        
-        <p id="quote" class="p-normal"></p>
-        <p id="quoteTime" class="p-small"></p>
-        
+        <div id="wrapper">
+            <header>project amoeba</header>
+            <div id="container">
+                <nav>
+                    toast<br>
+                    beans
+                </nav>
+                
+                <section id="content">
+                    <input type="text" id="txtQuote" />
+                    <button id="btnGetQuote" class="button" OnClick="GetQuote(txtQuote);">get quote</button>
+                    
+                    <p id="quote" style="font-size: xx-large"></p>
+                    <p id="quoteTime" style="font-size: small"></p>
+                </section>
+            </div>
+            <footer>Copyright (c) 2013 Calvin Morgan</footer>
         </div>
-        
     </body>
 </html>
